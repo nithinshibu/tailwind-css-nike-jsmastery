@@ -1,5 +1,7 @@
 import "./App.css";
 
+// This code is incomplete switch to nike-tailwind-v3-react-app branch for the full code
+
 const App = () => {
   return (
     <>
