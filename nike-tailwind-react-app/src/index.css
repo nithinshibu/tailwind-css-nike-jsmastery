@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
+/* @import "tailwindcss" prefix(tw); */
+/* Now if we have to use this prefix in className it should be used like "className='tw:text-yellow-500' " */
+
+/* @plugin "daisyui" */
 
 * {
   margin: 0;
@@ -11,8 +15,35 @@
 }
 
 @theme {
+  /* Font */
   --font-montserrat: "Montserrat", "sans-serif";
   --font-playfair: "Playfair Display", "Montserrat", "sans-serif";
+  --font-palanquin: "Palanquin", "sans-serif";
+
+  /* Screens/ breakpoint */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 12px;
+  --breakpoint-sm: 14px;
+  --breakpoint-base: 16px;
+  --breakpoint-lg: 18px;
+  --breakpoint-xl: 20px;
+  --breakpoint-xl: 24px;
+  --breakpoint-xl: 28px;
+  --breakpoint-xl: 48px;
+  --breakpoint-xl: 96px;
+
+  /* Color */
+  --color-primary: #eceeff;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-plale-blue: #f5f6ff;
+  --color-white-400: rgba(255, 255, 255, 0.8);
+
+  /* Box shadow */
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  /* background image */
+  --bg-hero-img: url("assets/images/collection-background.svg");
 }
 
 @layer components {
